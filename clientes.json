@@ -1,0 +1,11 @@
+{
+  "_comment": "Páginas de convite para grupo VIP da Retrieve (vip.assessoriaretrieve.com.br/<caminho>). Cada página dispara o pixel do cliente (PageView + evento ConviteGrupoVIP) e abre o convite do grupo. Gerar com: python gerar.py",
+  "paginas": [
+    {
+      "caminho": "lyken",
+      "nome": "Lyken",
+      "pixel": "1581490439266086",
+      "grupo": "https://chat.whatsapp.com/K6UwFRTbHC30vjKCCZ7reo"
+    }
+  ]
+}
