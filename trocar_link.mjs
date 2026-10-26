@@ -25,14 +25,18 @@ console.log(alvo.length, "anúncios com o link antigo");
 for (const a of modo === "todos" ? alvo : alvo.slice(0, 1)) {
   const spec = JSON.parse(JSON.stringify(a.creative.object_story_spec).replaceAll(JSON.stringify(antigo).slice(1, -1), "§").replace(/https?:\/\/[^"]*§[^"]*/g, novo));
   if (JSON.stringify(spec).includes(antigo)) throw new Error(`${a.name}: link antigo continua no criativo`);
-  for (const k of ["video_data", "link_data"]) if (spec[k]) { delete spec[k].image_url_hash; }
+  for (const k of ["video_data", "link_data"]) if (spec[k]) { delete spec[k].image_url_hash; if (spec[k].image_hash) delete spec[k].image_url; }
   backup[a.id] = { nome: a.name, criativo_antigo: a.creative.id, tracking_specs_antigo: a.tracking_specs || [] };
   const outros = (a.tracking_specs || []).filter((t) => !(t["action.type"] || []).includes("offsite_conversion"));
   const anterior = (a.tracking_specs || []).find((t) => (t["action.type"] || []).includes("offsite_conversion"));
   if (anterior) console.log("  eventos do site antes:", JSON.stringify(anterior.fb_pixel));
   fs.writeFileSync(BACKUP, JSON.stringify(backup, null, 1));
   const campos = { name: `${a.creative.name || a.name} [link vip]`, object_story_spec: spec };
-  if (a.creative.degrees_of_freedom_spec) campos.degrees_of_freedom_spec = a.creative.degrees_of_freedom_spec;
+  if (a.creative.degrees_of_freedom_spec) {
+    // "aprimoramentos padrão" foi descontinuado; os recursos individuais continuam no spec
+    delete a.creative.degrees_of_freedom_spec.creative_features_spec?.standard_enhancements;
+    campos.degrees_of_freedom_spec = a.creative.degrees_of_freedom_spec;
+  }
   const cr = await api("POST", `${act}/adcreatives`, campos);
   await api("POST", a.id, { creative: { creative_id: cr.id }, tracking_specs: [{ "action.type": ["offsite_conversion"], fb_pixel: [pixel] }, ...outros] });
   const r = await api("GET", a.id, { fields: "name,effective_status,tracking_specs,creative{object_story_spec}" });
