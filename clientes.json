@@ -71,7 +71,17 @@
       "caminho": "elisa-graef",
       "nome": "Elisa Graef",
       "pixel": "1108265861199794",
-      "grupo": "https://chat.whatsapp.com/H0I3PzkOrjD8sGMO9PvP8S"
+      "grupo": "https://chat.whatsapp.com/H0I3PzkOrjD8sGMO9PvP8S",
+      "_botao": "Desde 04/11/2026: página com botão (sem abrir o convite sozinha); ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Clube Elisa Graef",
+      "texto": "Dia 11 abre o Bazar Secreto, primeiro só para quem está no grupo. Peças pela metade do preço, até acabar o estoque",
+      "destaques": [
+        ["Trench coat Milão", "R$ 679", "R$ 339"],
+        ["Bermuda Lima", "R$ 299", "R$ 149"],
+        ["Regata Tijuca", "R$ 179", "até 45% off"]
+      ],
+      "cor": "#5f7f76"
     },
     {
       "caminho": "auten",
