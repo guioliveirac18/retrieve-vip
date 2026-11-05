@@ -35,12 +35,10 @@ fbq('track', 'PageView');
 </head>
 <body>
 <main>
-  <div class="selo">Bazar Secreto · dia 11/11</div>
-  <h1>{{TITULO}}</h1>
+  {{SELO}}<h1>{{TITULO}}</h1>
   <p>{{TEXTO}}</p>
-  <ul>{{DESTAQUES}}</ul>
-  <a class="botao" id="entrar" href="{{GRUPO}}">Entrar no grupo</a>
-  <p class="nota">Abre o WhatsApp e você entra direto, sem aprovação</p>
+  {{DESTAQUES}}<a class="botao" id="entrar" href="{{GRUPO}}">Entrar no grupo</a>
+  {{NOTA}}
 </main>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{PIXEL}}&ev=PageView&noscript=1" alt=""></noscript>
 <script>

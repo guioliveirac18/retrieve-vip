@@ -81,7 +81,9 @@
         ["Bermuda Lima", "R$ 299", "R$ 149"],
         ["Regata Tijuca", "R$ 179", "até 45% off"]
       ],
-      "cor": "#5f7f76"
+      "cor": "#5f7f76",
+      "selo": "Bazar Secreto · dia 11/11",
+      "nota": "Abre o WhatsApp e você entra direto, sem aprovação"
     },
     {
       "caminho": "auten",
@@ -93,7 +95,12 @@
       "caminho": "oest",
       "nome": "Oest",
       "pixel": "1635474047433380",
-      "grupo": "https://chat.whatsapp.com/LKhkEbGkQNUE1Dlv1HVYxt"
+      "grupo": "https://chat.whatsapp.com/LKhkEbGkQNUE1Dlv1HVYxt",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar (para otimizar a campanha por esse evento)",
+      "modelo": "modelo-botao.html",
+      "titulo": "Amigas da Oest",
+      "texto": "Entre no grupo e receba primeiro as ofertas e novidades da Oest",
+      "cor": "#731946"
     }
   ]
 }
