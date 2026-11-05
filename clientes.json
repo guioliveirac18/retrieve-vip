@@ -5,31 +5,56 @@
       "caminho": "lyken",
       "nome": "Lyken",
       "pixel": "1581490439266086",
-      "grupo": "https://chat.whatsapp.com/K6UwFRTbHC30vjKCCZ7reo"
+      "grupo": "https://chat.whatsapp.com/K6UwFRTbHC30vjKCCZ7reo",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "VIP Lyken",
+      "texto": "Entre no grupo e receba primeiro as ofertas e lançamentos da Lyken",
+      "cor": "#111111"
     },
     {
       "caminho": "fiorella",
       "nome": "Fiorella",
       "pixel": "1098076966209930",
-      "grupo": "https://chat.whatsapp.com/KiF8y8fOnZaHGqJxZWGlcf"
+      "grupo": "https://chat.whatsapp.com/KiF8y8fOnZaHGqJxZWGlcf",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Fiorella VIP",
+      "texto": "Entre no grupo e receba primeiro as ofertas e novidades da Fiorella",
+      "cor": "#905e4b"
     },
     {
       "caminho": "maquie",
       "nome": "Maquiê",
       "pixel": "290768922509979",
-      "grupo": "https://chat.whatsapp.com/BiCYdpdU5DDI19nIYP8xsq"
+      "grupo": "https://chat.whatsapp.com/BiCYdpdU5DDI19nIYP8xsq",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "VIP Maquiê",
+      "texto": "Entre no grupo e receba primeiro as ofertas e novidades da Maquiê",
+      "cor": "#8c1844"
     },
     {
       "caminho": "la-maison",
       "nome": "La Maison",
       "pixel": "1832208144415283",
-      "grupo": "https://chat.whatsapp.com/FdJl8LJVasw11RolzbInCx"
+      "grupo": "https://chat.whatsapp.com/FdJl8LJVasw11RolzbInCx",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP La Maison",
+      "texto": "Entre no grupo e receba primeiro as condições da Black da La Maison",
+      "cor": "#353535"
     },
     {
       "caminho": "lez-a-lez",
       "nome": "Lez a Lez",
       "pixel": "1345099511097437",
-      "grupo": "https://chat.whatsapp.com/HukVZF4yfsQ6lzzE387w4D"
+      "grupo": "https://chat.whatsapp.com/HukVZF4yfsQ6lzzE387w4D",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "VIP Lez a Lez",
+      "texto": "Entre no grupo e receba primeiro as ofertas e novidades da Lez a Lez Nações Shopping",
+      "cor": "#111111"
     },
     {
       "caminho": "vip-mr-valparaiso",
@@ -95,7 +120,12 @@
       "caminho": "marikitta",
       "nome": "Marikitta",
       "pixel": "4155523737915954",
-      "grupo": "https://chat.whatsapp.com/JIgHDcJzqXeBH6cFzbHVPH"
+      "grupo": "https://chat.whatsapp.com/JIgHDcJzqXeBH6cFzbHVPH",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP Marikitta",
+      "texto": "Entre no grupo e acompanhe primeiro a nova fase e a coleção nova da Marikitta",
+      "cor": "#202020"
     },
     {
       "caminho": "elisa-graef",
@@ -131,7 +161,12 @@
       "caminho": "auten",
       "nome": "Autên",
       "pixel": "1629391452136322",
-      "grupo": "https://chat.whatsapp.com/FIXgFDHW7qz7XEVl9WX159"
+      "grupo": "https://chat.whatsapp.com/FIXgFDHW7qz7XEVl9WX159",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Clube do Homem Autên",
+      "texto": "Entre no grupo e fique sabendo primeiro das ofertas da Black da Autên",
+      "cor": "#0f2c2d"
     },
     {
       "caminho": "oest",
