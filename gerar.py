@@ -1,7 +1,7 @@
 """Gera uma pasta por cliente (caminho/index.html) a partir de modelo.html e clientes.json.
 
-Cliente com "modelo": "modelo-botao.html" usa a página com botão: titulo, texto e cor obrigatórios; selo, nota e
-destaques [nome, de, por] opcionais (sem eles, a página fica só com título, texto e botão)."""
+Cliente com "modelo": "modelo-botao.html" usa a página com botão: titulo, texto e cor obrigatórios; selo, nota,
+cor_texto (texto do botão, padrão branco) e destaques [nome, de, por] opcionais (sem eles, a página fica só com título, texto e botão)."""
 import json
 import re
 from html import escape
@@ -33,8 +33,11 @@ def main() -> None:
         html = (modelo.replace("{{NOME}}", p["nome"]).replace("{{PIXEL}}", p["pixel"])
                 .replace("{{GRUPO}}", p["grupo"]).replace("{{CAMINHO}}", p["caminho"]))
         if "modelo" in p:
-            if not re.fullmatch(r"#[0-9a-fA-F]{6}", p.get("cor", "")):
-                raise SystemExit(f"cor inválida para {p['caminho']}")
+            cor_texto = p.get("cor_texto", "#ffffff")
+            for cor in (p.get("cor", ""), cor_texto):
+                if not re.fullmatch(r"#[0-9a-fA-F]{6}", cor):
+                    raise SystemExit(f"cor inválida para {p['caminho']}")
+            html = html.replace("{{COR_TEXTO}}", cor_texto)
             html = (html.replace("{{TITULO}}", escape(p["titulo"])).replace("{{TEXTO}}", escape(p["texto"]))
                     .replace("{{DESTAQUES}}", destaques(p.get("destaques", []))).replace("{{COR}}", p["cor"])
                     .replace("{{SELO}}", opcional(p.get("selo", ""), '<div class="selo">{}</div>\n  '))

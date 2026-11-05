@@ -11,7 +11,7 @@ fbq('init', '{{PIXEL}}');
 fbq('track', 'PageView');
 </script>
 <style>
-  :root { --fundo: #f6f4f1; --cartao: #ffffff; --texto: #1d1d1b; --suave: #6b6a66; --linha: #e4e1dc; --cor: {{COR}}; --botao-texto: #ffffff; }
+  :root { --fundo: #f6f4f1; --cartao: #ffffff; --texto: #1d1d1b; --suave: #6b6a66; --linha: #e4e1dc; --cor: {{COR}}; --botao-texto: {{COR_TEXTO}}; }
   @media (prefers-color-scheme: dark) { :root { --fundo: #151514; --cartao: #1f1f1d; --texto: #f2f1ee; --suave: #a9a8a3; --linha: #34332f; } }
   * { box-sizing: border-box; }
   body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--fundo); color: var(--texto);

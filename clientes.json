@@ -35,31 +35,61 @@
       "caminho": "vip-mr-valparaiso",
       "nome": "Vip MR Valparaíso",
       "pixel": "1621313615625014",
-      "grupo": "https://chat.whatsapp.com/Dsp54rJxW4c7I2U9exM5iq"
+      "grupo": "https://chat.whatsapp.com/Dsp54rJxW4c7I2U9exM5iq",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP Valparaíso",
+      "texto": "Entre no grupo da Vip MR e receba primeiro as ofertas e novidades da loja",
+      "cor": "#ddd1a8",
+      "cor_texto": "#131c16"
     },
     {
       "caminho": "vip-mr-aguas-lindas",
       "nome": "Vip MR Águas Lindas",
       "pixel": "1621313615625014",
-      "grupo": "https://chat.whatsapp.com/GLpmuDz6etDExy795xyvMR"
+      "grupo": "https://chat.whatsapp.com/GLpmuDz6etDExy795xyvMR",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP Águas Lindas",
+      "texto": "Entre no grupo da Vip MR e receba primeiro as ofertas e novidades da loja",
+      "cor": "#ddd1a8",
+      "cor_texto": "#131c16"
     },
     {
       "caminho": "vip-mr-paranoa",
       "nome": "Vip MR Paranoá",
       "pixel": "1621313615625014",
-      "grupo": "https://chat.whatsapp.com/ELFLMborViY36nzgrnswzM"
+      "grupo": "https://chat.whatsapp.com/ELFLMborViY36nzgrnswzM",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP Paranoá",
+      "texto": "Entre no grupo da Vip MR e receba primeiro as ofertas e novidades da loja",
+      "cor": "#ddd1a8",
+      "cor_texto": "#131c16"
     },
     {
       "caminho": "vip-mr-sao-sebastiao",
       "nome": "Vip MR São Sebastião",
       "pixel": "1621313615625014",
-      "grupo": "https://chat.whatsapp.com/HKChtGNCS2p5ENOodtyo10"
+      "grupo": "https://chat.whatsapp.com/HKChtGNCS2p5ENOodtyo10",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP São Sebastião",
+      "texto": "Entre no grupo da Vip MR e receba primeiro as ofertas e novidades da loja",
+      "cor": "#ddd1a8",
+      "cor_texto": "#131c16"
     },
     {
       "caminho": "vip-mr-luziania",
       "nome": "Vip MR Luziânia",
       "pixel": "1621313615625014",
-      "grupo": "https://chat.whatsapp.com/LXNsqZv2LRpKxMBfYv8b0d"
+      "grupo": "https://chat.whatsapp.com/LXNsqZv2LRpKxMBfYv8b0d",
+      "_botao": "Desde 05/11/2026: página simples com botão; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Grupo VIP Luziânia",
+      "texto": "Entre no grupo da Vip MR e receba primeiro as ofertas e novidades da loja",
+      "cor": "#ddd1a8",
+      "cor_texto": "#131c16"
     },
     {
       "caminho": "marikitta",
@@ -77,9 +107,21 @@
       "titulo": "Clube Elisa Graef",
       "texto": "Dia 11 abre o Bazar Secreto, primeiro só para quem está no grupo. Peças pela metade do preço, até acabar o estoque",
       "destaques": [
-        ["Trench coat Milão", "R$ 679", "R$ 339"],
-        ["Bermuda Lima", "R$ 299", "R$ 149"],
-        ["Regata Tijuca", "R$ 179", "até 45% off"]
+        [
+          "Trench coat Milão",
+          "R$ 679",
+          "R$ 339"
+        ],
+        [
+          "Bermuda Lima",
+          "R$ 299",
+          "R$ 149"
+        ],
+        [
+          "Regata Tijuca",
+          "R$ 179",
+          "até 45% off"
+        ]
       ],
       "cor": "#5f7f76",
       "selo": "Bazar Secreto · dia 11/11",
