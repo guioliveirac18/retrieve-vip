@@ -190,6 +190,17 @@
       "texto": "Entre no canal e receba primeiro as ofertas e novidades da Privillege",
       "botao": "Entrar no canal",
       "cor": "#111111"
+    },
+    {
+      "caminho": "pison",
+      "nome": "Pison",
+      "pixel": "1594124268745307",
+      "grupo": "https://chat.whatsapp.com/DVuCqYueDoFKMd3DFaQgeD",
+      "_botao": "Desde 09/11/2026: modelo com botão; pixel Pison Website (único da conta act_1794303695337319); ConviteGrupoVIP só no toque",
+      "modelo": "modelo-botao.html",
+      "titulo": "Pison Homem VIP",
+      "texto": "Entre no grupo e receba primeiro as condições e novidades da Pison Homem",
+      "cor": "#221e1f"
     }
   ]
 }
