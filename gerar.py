@@ -1,7 +1,7 @@
 """Gera uma pasta por cliente (caminho/index.html) a partir de modelo.html e clientes.json.
 
 Cliente com "modelo": "modelo-botao.html" usa a página com botão: titulo, texto e cor obrigatórios; selo, nota,
-cor_texto (texto do botão, padrão branco) e destaques [nome, de, por] opcionais (sem eles, a página fica só com título, texto e botão)."""
+cor_texto (texto do botão, padrão branco), botao (padrão "Entrar no grupo"; canal usa "Entrar no canal") e destaques [nome, de, por] opcionais (sem eles, a página fica só com título, texto e botão)."""
 import json
 import re
 from html import escape
@@ -27,7 +27,8 @@ def opcional(valor: str, molde: str) -> str:
 def main() -> None:
     paginas = json.loads((RAIZ / "clientes.json").read_text(encoding="utf-8"))["paginas"]
     for p in paginas:
-        if not p["grupo"].startswith("https://chat.whatsapp.com/") or not p["pixel"].isdigit():
+        link_ok = p["grupo"].startswith(("https://chat.whatsapp.com/", "https://whatsapp.com/channel/"))
+        if not link_ok or not p["pixel"].isdigit():
             raise SystemExit(f"dados inválidos para {p['caminho']}")
         modelo = (RAIZ / p.get("modelo", "modelo.html")).read_text(encoding="utf-8")
         html = (modelo.replace("{{NOME}}", p["nome"]).replace("{{PIXEL}}", p["pixel"])
@@ -41,7 +42,8 @@ def main() -> None:
             html = (html.replace("{{TITULO}}", escape(p["titulo"])).replace("{{TEXTO}}", escape(p["texto"]))
                     .replace("{{DESTAQUES}}", destaques(p.get("destaques", []))).replace("{{COR}}", p["cor"])
                     .replace("{{SELO}}", opcional(p.get("selo", ""), '<div class="selo">{}</div>\n  '))
-                    .replace("{{NOTA}}", opcional(p.get("nota", ""), '<p class="nota">{}</p>')))
+                    .replace("{{NOTA}}", opcional(p.get("nota", ""), '<p class="nota">{}</p>'))
+                    .replace("{{BOTAO}}", escape(p.get("botao", "Entrar no grupo"))))
         if "{{" in html:
             raise SystemExit(f"marcador sem valor em {p['caminho']}")
         destino = RAIZ / p["caminho"]

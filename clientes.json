@@ -178,6 +178,18 @@
       "titulo": "Amigas da Oest",
       "texto": "Entre no grupo e receba primeiro as ofertas e novidades da Oest",
       "cor": "#731946"
+    },
+    {
+      "caminho": "privillege",
+      "nome": "Privillege",
+      "pixel": "1541558190779248",
+      "grupo": "https://whatsapp.com/channel/0029VaB9eic4tRrkM0FtE72v",
+      "_botao": "Desde 09/11/2026: canal do WhatsApp (não grupo); pixel Whatsapp Privillege; ConviteGrupoVIP só no toque em Entrar",
+      "modelo": "modelo-botao.html",
+      "titulo": "Canal VIP Privillege",
+      "texto": "Entre no canal e receba primeiro as ofertas e novidades da Privillege",
+      "botao": "Entrar no canal",
+      "cor": "#111111"
     }
   ]
 }
